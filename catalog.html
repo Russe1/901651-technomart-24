@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин инструментов Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
         <header class="main-header">
@@ -69,7 +70,15 @@
                 <section class="catalog">
                     <h2 class="visually-hidden">Каталог</h2>
                     <div class="filters">
-                        <form action="https://echo.htmlacademy.ru" class="item-filter" method="post">
+                        <h3>Фильтр:</h3>
+                        <form action="https://echo.htmlacademy.ru" class="item-filter" method="post" oninput="costoutput.value=cost.value">
+                            <div class="cost">
+                                <label for="cost">Цена:</label><br/>
+                                <input type="range" name="cost" id="cost" min="0" max="40000" step="1" ><br/>
+                                <output name="costoutput"></output>
+
+                                
+                            </div>
                             <div class="brands">
                                 <p>ПРОИЗВОДИТЕЛИ:</p>
                                 <ul class="brand-filter">
@@ -116,6 +125,15 @@
                 
                     <div class="goods">
                         <h2 class="visually-hidden">Список перфораторов</h2>
+                        <div class="goods-sorting">
+                            <h3>Сортировка:</h3>
+                            <a href="#">по цене:</a>
+                            <a href="#">по типу:</a>
+                            <a href="#">по функционалу:</a>
+                            <span class="up"></span>
+                            <span class="down"></span>
+                        </div>
+                        
                         <ul class="good-item">
                             <li>
                                 <h3>
@@ -168,7 +186,7 @@
                                     <a class="button-pack" href="#">В ЗАКЛАДКИ</a>
                                 </div>                                
                                 <p class="good-price">12500 Р.</p>
-                                <span class="new-good"></span>
+                                <span class="new"></span>
                             </li>
                             <li>
                                 <h3>
@@ -204,7 +222,7 @@
                                 </div>
                                 <span>30500 Р.</span>
                                 <p class="good-price">25500 Р.</p>
-                                <span class="new-good"></span>
+                                <span class="new"></span>
                             </li>
 
                             <li>
@@ -222,7 +240,7 @@
                                     <a class="button-pack" href="#">В ЗАКЛАДКИ</a>
                                 </div>                                
                                 <p class="good-price">12500 Р.</p>
-                                <span class="new-good"></span>
+                                <span class="new"></span>
                             </li>
                             <li>
                                 <h3>
@@ -276,10 +294,18 @@
                                     <a class="button-pack" href="#">В ЗАКЛАДКИ</a>
                                 </div>                                
                                 <p class="good-price">12500 Р.</p>                               
-                            </li>
-
-                            
+                            </li>                            
                         </ul>
+                        <div class="paginator">
+                            <a href="#" class="page">1</a>
+                            <a href="#" class="page">2</a>
+                            <a href="#" class="page">3</a>
+                            <a href="#" class="page">Следующая</a>
+                        </div>
+                        <div class="about-drills">
+                            <h3>Пара слов о перфораторах</h3>
+                            <p>dgbsrfvsdc</p>
+                        </div>
                     </div>
                 </section>
             </div>
