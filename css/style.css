@@ -1,0 +1,428 @@
+body {
+	padding:0;
+	margin:0;
+	font-family: 'Cuprum', sans-serif;
+	color: #ffffff
+	border:1px solid green;
+	font-size:17px;
+	width: 1200px;
+}
+* {
+	box-sizing: border-box;
+}
+
+/*блок шапки*/
+.header-color .container {
+	background-color: #f4f7f9;
+
+}
+
+/*верхняя часть шапки*/
+.header-top {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #243147;
+	padding-left: 130px;
+	padding-right: 130px;
+	display: flex;
+
+}
+.header-top-logo {	
+	padding:13px 55px;
+ 	box-shadow:0px 5px 0 0 #B62430;
+ 	background-color: #ee3643;
+}
+
+
+.header-search {
+	position: relative;
+	width: 270px;
+	padding-left: 50px;
+	
+}
+.header-search label:before {
+	content: "";
+	width: 17px;
+	height: 17px;
+	background-image:url("../img/icon-search.svg");
+	background-size: 100%;
+	position:absolute;
+	left:17px;
+	top:13px;
+}
+
+.header-search input {
+
+	box-sizing: border-box;
+	width:100%;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border:none;
+	font-size:17px;
+	background-color: #243147;
+}
+input[type="search"]::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.header-menu {
+	display: flex;
+	margin-left: auto;
+	
+}
+.header-menu a {
+	padding-top: 14px;
+	padding-bottom: 14px;
+	text-decoration: none;
+	color: #ffffff; 
+	font-size: 17px;
+	
+
+}
+.checkout {
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #63a63e;
+} 
+.cart {
+	position:relative;
+	padding-left: 50px;
+	padding-right:31px;
+}
+
+.bookmarks{
+	position:relative;
+	padding-left: 44px;
+	padding-right:28px;
+}
+.bookmarks:before {
+	content: "";
+	width: 14px;
+	height: 16px;
+	background-image:url("../img/icon-bookmark.svg");
+	background-size: 100%;
+	position:absolute;
+	left:17px;
+	top:13px;
+}
+.cart:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-image:url("../img/cart-icon.svg");
+	background-size: 100%;
+	position:absolute;
+	left:17px;
+	top:13px;
+}
+
+
+
+
+/* центральная часть шапки*/
+.header-center {
+	display: flex;
+	align-items: flex-start;
+	padding-top:46px;
+	border:1px solid red;
+	margin-bottom: 44px;
+
+}
+.header-center h1 {
+	margin-bottom: 0px;
+	
+	margin-left: 53px;
+	font-size: 16px;
+	font-style: italic;
+	width: 200px;
+	color: #ee3643;
+	border:1px solid red;
+	margin-top:0;
+	padding-top: 8px;
+	line-height: 28px;
+}
+.header-contacts {
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 71px;
+	border:1px solid red ;
+	padding:0;
+}
+.header-phone {
+	position: relative;
+	
+	font-size: 21px;
+	color:#ee3643;
+	padding-left:74px ;
+	padding-top: 13px;
+	padding-bottom: 11px;
+	padding-right: 52px;
+	border: 5px solid #ffffff;
+	margin:0;
+}
+.header-phone:before {
+	content: "";
+	width: 19px;
+	height: 19px;
+	background-image:url("../img/icon-phone.svg");
+	background-size: 100%;
+	position:absolute;
+	left:15px;
+	top:13px;
+}
+.header-address {
+	margin-top:10px;
+	text-align: center;
+	
+	font-size: 14px;
+	color: #32425c;
+	padding-bottom: 0px;
+}
+.user-navigation {
+	margin-top:0;
+	border:1px solid red ;
+	padding-left:0px;
+	margin-left:auto;
+	display:flex;
+	align-items: flex-start;
+}
+
+.user-navigation a {
+	text-decoration: none;
+	color:#000000;
+	font-size: 21px;
+	padding-top:14px;
+	padding-bottom: 11px;
+	background-color: #ffffff;
+}
+.registration-link {
+	padding-left:25px;
+	padding-right: 25px;
+	margin-left: 10px	
+}
+.login-link {
+	position: relative;
+	padding-left:48px;
+	padding-right: 27px;
+}
+.login-link:before {
+	content: "";
+	width: 20px;
+	height: 17px;
+	background-image:url("../img/icon-login.svg");
+	background-size: 100%;
+	position:absolute;
+	left:14px;
+	top:17px;
+}
+
+/*нижняя часть шапки*/
+.main-navigation {
+	margin-bottom: 60px;
+
+	box-shadow: inset 0px -5px 0 0 #293449;
+ 	background-color: #32425c;
+}
+.site-navigation {
+	margin:0;
+	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+	
+	
+	
+
+
+}
+.site-navigation li {
+	padding-top: 21px;
+	padding-bottom: 23px;
+	
+	list-style: none;
+	
+}
+.site-navigation a {
+	font-size: 17px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-top: 21px;
+	padding-bottom: 23px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+}
+
+
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 130px;
+	padding-right: 130px;
+	border:1px solid red;
+	
+}
+
+/*основной контент*/
+
+.fast-menu {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+	margin:0;
+	border:1px solid red ;
+
+}
+.fast-menu li {
+	padding:0;
+	margin:0;
+	
+	position:relative;
+	width: 300px;
+	height: 123px;
+	background-color: gray;
+	list-style: none;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.fast-menu h3 {
+	padding-left:23px;
+	padding-top: 26px;
+	margin: 0;
+	font-size: 24px;
+	color: #ffffff;
+	margin-bottom: 15px
+
+}
+.fast-menu a {
+	text-decoration: none;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 12px 24px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	margin-left:25px;
+	 
+
+	
+}
+.fast-menu li:nth-child(1) {
+	background-color: #ffbf47;
+
+}
+.fast-menu li:nth-child(1):before {
+	content: "";
+	width: 44px;
+	height: 65px;
+	background-image:url("../img/icon-1.svg");
+	background-size: 100%;
+	position:absolute;
+	right:43px;
+	top:31px;
+}
+.fast-menu span {
+	padding:0;
+	margin: 0;
+}
+.fast-menu .new {
+	
+	width: 60px;
+	height: 59px;
+	background-image:url("../img/new-flag.png");
+	background-size: 100%;
+	position:absolute;
+	right: 0px;
+	top:0px;
+}
+
+
+.fast-menu li:nth-child(2) {
+	background-color:  #3bbce3;
+}
+.fast-menu li:nth-child(2):before {
+	content: "";
+	width: 75px;
+	height: 61px;
+	background-image:url("../img/icon-2.svg");
+	background-size: 100%;
+	position:absolute;
+	right:28px;
+	top:33px;
+}
+
+
+.fast-menu li:nth-child(3) {
+	background-color:  #dc91d8;
+}
+.fast-menu li:nth-child(3):before {
+	content: "";
+	width: 78px;
+	height: 62px;
+	background-image:url("../img/icon-3.svg");
+	background-size: 100%;
+	position:absolute;
+	right:31px;
+	top:31px;
+}
+
+
+
+.fast-menu li:last-child {
+	margin:0;
+	padding: 0;
+	width: 618px;
+	height: 266px;
+	background-image:url("../img/drills-slider.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.fast-menu li:nth-child(4) {
+	order:2;
+
+}
+
+.fast-menu li:nth-child(5) {
+	position: absolute;
+	right: 0;
+	bottom: -20px;
+	
+}
+
+/*
+img[alt="Материалы"] {
+	position: absolute;
+	right: 43px
+	top: 31px;
+}
+*/
+.popular-goods li {
+  list-style: none;
+}
+
+
+.popular-goods {
+	display: flex;
+  flex-direction: row;
+}
+
+.popular-brands li {
+	list-style: none;
+}
+.popular-brands ul {
+	display: flex;
+}
+.good-item li {
+	list-style: none;
+}
+.good-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
