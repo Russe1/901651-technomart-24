@@ -1,5 +1,10 @@
-	//модальное окно отправки письма
-	    var letter = document.querySelector(".letter");
+    var letter = document.querySelector(".letter");
+    var map = document.querySelector(".big-map");
+    var buy = document.querySelectorAll(".button-buy");
+    var mark = document.querySelectorAll(".button-pack")
+
+    //модальное окно отправки письма
+    if (letter) {
         var popupLetter = document.querySelector(".modal-letter");
         var closeLetter = popupLetter.querySelector("[name=modal-close]");
 
@@ -14,9 +19,11 @@
             popupLetter.classList.remove("modal-show");
         });
 
-        //модальное окно карты
+    }
 
-        var map = document.querySelector(".big-map");
+    //модальное окно карты
+
+    if (map) {
         var popupMap = document.querySelector(".modal-map");
         var closeMap = popupMap.querySelector("[name=modal-close]");
 
@@ -30,26 +37,26 @@
             evt.preventDefault();
             popupMap.classList.remove("modal-show");
         });
+    }
 
 
+    //модальное окно покупок
 
-        //модальное окно покупок
-
-        var buy = document.querySelectorAll(".button-buy");
-        var Buy = console.log(buy);
-
-
+    if (buy) {
         var popupBuy = document.querySelector(".modal-buy");
         var closeBuy = popupBuy.querySelector("[name=modal-close]");
+        var cart = document.querySelector(".cart")
 
-        
-        
+
+
         buy.forEach(function(element) {
             element.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popupBuy.classList.add("modal-show");
+                evt.preventDefault();
+                popupBuy.classList.add("modal-show");
+                cart.classList.add("red")
 
-        });
+
+            });
 
         });
 
@@ -57,3 +64,18 @@
             evt.preventDefault();
             popupBuy.classList.remove("modal-show");
         });
+
+    }
+
+    //добавоение товара в закладки
+
+    if (mark) {
+        var bookmark = document.querySelector(".bookmarks");
+
+        mark.forEach(function(element) {
+            element.addEventListener("click",function(evt) {
+                evt.preventDefault();
+                bookmark.classList.add("on")
+            });
+        });
+    }
