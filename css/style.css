@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
     color: #ffffff;
-    font-size:17px;
+    font-size: 17px;
 
 }
 
@@ -23,7 +23,7 @@ body {
 .header-top {
     width: 100%;
     background-color: #243147;
-    border:none;
+    border: none;
 }
 
 .header-top .container {
@@ -1045,7 +1045,7 @@ input[type="search"]:-ms-input-placeholder {
 /*"хлебные крошки"*/
 
 .catalog-main .container {
-    display:block;
+    display: block;
 }
 
 .breadcrumbs {
@@ -1058,8 +1058,8 @@ input[type="search"]:-ms-input-placeholder {
     align-items: flex-start;
     min-height: 60px;
     list-style: none;
-    padding-top:23px;
-    flex:1;
+    padding-top: 23px;
+    flex: 1;
 }
 
 .breadcrumbs li {
@@ -1261,7 +1261,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .cost-buttons:hover:before,
 .cost-buttons:hover:after {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .cost-buttons:after {
@@ -1302,7 +1302,7 @@ input[id="last-cost"] {
 .dash {
     padding-left: 5px;
     padding-right: 5px;
-    color:#000000;
+    color: #000000;
 }
 
 .filters hr {
@@ -1610,7 +1610,7 @@ input[name="apply-filters"]:hover {
     padding: 0;
     margin-top: 20px;
     display: block;
-    flex:1;
+    flex: 1;
 }
 
 .goods-sorting {
@@ -2305,15 +2305,15 @@ input[name="apply-filters"]:hover {
 /*нижняя часть шапки*/
 
 .footer-bottom {
-	padding: 0;
+    padding: 0;
     width: 100%;
     background-color: #243147;
 }
 
 .footer-bottom .container {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2336,8 +2336,8 @@ input[name="apply-filters"]:hover {
 }
 
 .footer-copyright {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
     padding-left: 11px;
     padding-top: 2px;
 }
@@ -2359,7 +2359,7 @@ input[name="apply-filters"]:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-	margin-left: 77px;
+    margin-left: 77px;
 }
 
 .social-button {
@@ -2396,13 +2396,13 @@ input[name="apply-filters"]:hover {
 }
 
 .footer-feedback {
-	margin: 0;
-	margin-left: 33px;
-	padding-top: 2px;
+    margin: 0;
+    margin-left: 33px;
+    padding-top: 2px;
 }
 
 .footer-creator {
-	margin: 0;
+    margin: 0;
     margin-left: auto;
     padding-right: 26px;
     padding-top: 2px;
@@ -2455,7 +2455,7 @@ button[name="modal-close"] {
     background-repeat: no-repeat;
     right: 9px;
     top: 9px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .modal-letter label {
@@ -2814,15 +2814,19 @@ li:hover .good-action {
 
 /*активные карточки брендов*/
 
-.popular-brands li:hover {
+.brand:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.popular-brands li:active {
+.brand:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
-li:active .brand {
+.brand:active img {
+    opacity: 0.3;
+}
+
+.popular-brands img:active {
     opacity: 0.3;
 }
 
@@ -2883,7 +2887,7 @@ li:active .brand {
 
 .paginator .page:active {
     background-color: #ffffff;
-    border-color:1px solid #ee3643;
+    border-color: 1px solid #ee3643;
     color: #000000;
 }
 
@@ -2963,11 +2967,11 @@ input[name="user-mail"]:focus {
 }
 
 .red:hover {
-    background-color:#ee3643;
+    background-color: #ee3643;
 }
 
 .red:active {
-    background-color:#ee3643;
+    background-color: #ee3643;
 }
 
 /*интерактивная карта*/
@@ -2984,10 +2988,10 @@ iframe {
 }
 
 .red {
-    background-color:#ee3643;
+    background-color: #ee3643;
 }
 
-.on:before  {
+.on:before {
     content: "";
     width: 14px;
     height: 16px;
