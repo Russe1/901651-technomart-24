@@ -14,7 +14,7 @@
         <div class="header-top">
             <div class="container">
                 <a class="header-top-logo" href="index.html">
-                    <img src="img/logo-technomart.png" width="111" height="18" alt="Техномарт">
+                    <img src="img/technomart-logo-header.svg" width="111" height="18" alt="Техномарт">
                 </a>
                 <form action="https://echo.htmlacademy.ru" class="header-search" method="get">
                     <input type="search" name="search" id="search" placeholder="Поиск:">
@@ -79,7 +79,7 @@
                                 <span class="cost-line"></span>
                             </div>
                             <input type="text" name="cost" id="first-cost" value="0">
-                            <span class="dash">–</span>
+                            <span class="dash">—</span>
                             <input type="text" name="cost" id="last-cost" value="30000">
                             <hr />
                         </div>
@@ -139,8 +139,8 @@
                         <a href="#" class="price">по цене</a>
                         <a href="#" class="type">по типу</a>
                         <a href="#" class="function">по функционалу</a>
-                        <button class="ascending"></button>
-                        <button class="descending"></button>
+                        <button type="button" class="ascending"></button>
+                        <button type="button" class="descending"></button>
                     </div>
                     <ul class="goods-items">
                         <li>
@@ -271,10 +271,10 @@
                         </li>
                     </ul>
                     <div class="paginator">
-                        <button class="page">1</button>
-                        <button class="page">2</button>
-                        <button class="page">3</button>
-                        <button class="next-page">следующая</button>
+                        <a href="#" class="page page-focus">1</a>
+                        <a href="#" class="page">2</a>
+                        <a href="#" class="page">3</a>
+                        <a href="#" class="next-page">следующая</a>
                     </div>
                 </div>
             </section>
@@ -293,7 +293,7 @@
         <div class="footer-top ">
             <div class="container">
                 <a class="footer-logo" href="index.html">
-                    <img src="img/footer-logo.png" width="138" height="23" alt="Техномарт">
+                    <img src="img/technomart-logo-footer.svg" width="138" height="23" alt="Техномарт">
                 </a>
                 <nav class="footer-top-navigation">
                     <ul class="footer-site-navigation">
@@ -308,7 +308,8 @@
         </div>
         <div class="footer-center">
             <div class="container">
-                <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br />
+                <p class="footer-contacts">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     +7 (812) 555-05-55
                 </p>
                 <nav class="footer-center-navigation">
@@ -323,7 +324,8 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p class="footer-copyright">© 2010–2019 Компания «Техномарт» <br />
+                <p class="footer-copyright">
+                    © 2010–2019 Компания «Техномарт»
                     Все права защищены
                 </p>
                 <ul class="footer-social">
@@ -332,11 +334,11 @@
                     <li><a class="social-button insta" href="#"></a></li>
                 </ul>
                 <p class="footer-feedback">
-                    <b>Обратная связь:</b><br />
+                    <b>Обратная связь:</b>
                     <a href="#">mail@htmlacademy.ru</a>
                 </p>
                 <p class="footer-creator">
-                    <b>Разработано —</b><br />
+                    <b>Разработано —</b>
                     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                 </p>
             </div>
@@ -353,7 +355,7 @@
                 <a class="continue-buy" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a>
             </div>
         </div>
-        <button name="modal-close" id="buy-close"></button>
+        <button type="button" name="modal-close" id="buy-close"></button>
     </section>
     <script src="js/java-script.js"></script>
 </body>
